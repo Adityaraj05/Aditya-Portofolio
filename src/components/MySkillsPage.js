@@ -175,7 +175,7 @@ const MySkillsPage = () => {
               <strong>I like to Develop</strong> <br />
               <ul>
                 <li>A FullStack Web-Application</li>
-                <li></li>
+                <li>Responsive Websites</li>
               </ul>
             </Description>
             <Description>
@@ -197,12 +197,12 @@ const MySkillsPage = () => {
               <strong>Skills</strong> <br />
               <p>
                 Html, Css, Js, React, Node.js, Bootstrap, Tailwind,
-                Next.js,etc.
+                Next.js,Java,python etc.
               </p>
             </Description>
             <Description>
               <strong>Tools</strong> <br />
-              <p>VScode, Github, LeetCode etc.</p>
+              <p>VScode, Github.</p>
             </Description>
           </Main>
           <BigTitle text="Skills" top="80%" right="30%" />
