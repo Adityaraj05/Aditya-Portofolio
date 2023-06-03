@@ -255,7 +255,7 @@ const Main = () => {
             <Contact
               click={+false}
               target="_blank"
-              href="mailto:aditya.singh456m@gmail.com"
+              href="mailto:adityarajavi05@gmail.com"
             >
               <motion.h3
                 initial={{
