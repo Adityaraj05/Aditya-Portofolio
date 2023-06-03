@@ -3,20 +3,20 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"Google-Clone",
+        description:"It is build on top of the Next.js, with styledComponents and Google api for severside rendering",
+        tags:["Next.js","API","MaterialIcons","heroIcons"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"https://google-clone-kappa-eight.vercel.app/",
+        github:"https://github.com/Adityaraj05/Google-clone"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"Twitter-Clone",
+        description:"It is build on top of the Next.js, with StyleComponents and for backend i have used firebase storage",
+        tags:["Next.js","Tailwind-css","Firebase","MateriaiIcons","HeroIcons",],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
+        demo:"https://twitter-clone-lilac-pi.vercel.app/",
         github:"https://github.com/codebucks27/react-job-listing-website"
         
     },
@@ -31,12 +31,12 @@ export const Work = [
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"Text-Utils",
+        description:"It is web tool to assist developers and other people in daily tasks by providing tools for manipulating the text-data.",
+        tags:["react","tailwind-css","javascript"],
         
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        demo:"https://utility-azure.vercel.app/",
+        github:"https://github.com/Adityaraj05/Utility"
        
     },{
         id:5,
@@ -50,12 +50,12 @@ export const Work = [
     },
     {
         id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
+        name:"Curd-App",
+        description:"A CRUD app is a specific type of software application that consists of four basic operations; Create, Read, Update, Delete",
         tags:["react","react-router","css"],
         
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
+        demo:"https://adityarajcrudapp.netlify.app/",
+        github:"https://github.com/Adityaraj05/Adityarajcrudappr"
         
     },
     
