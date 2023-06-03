@@ -165,23 +165,23 @@ const MySkillsPage = () => {
 
           <Main>
             <Title>
-              <Design width={40} height={40} /> Blockchain Developer
+              <Design width={40} height={40} /> Web Developer
             </Title>
             <Description>
-              Skilled professional specializing in designing and implementing
-              secure, decentralized systems using blockchain technology.
+              Skilled professional specializing in designing and implementing a
+              secure website.
             </Description>
             <Description>
               <strong>I like to Develop</strong> <br />
               <ul>
-                <li>Decentralized Application DApps</li>
-                <li>Smart Contracts, and Protocols</li>
+                <li>A FullStack Web-Application</li>
+                <li></li>
               </ul>
             </Description>
             <Description>
               <strong>Tools</strong> <br />
               <ul>
-                <li>Solidity, Remix IDEs, Ethereum, Web3.js</li>
+                <li>React.js,Next.js,Tailwind-css etc..</li>
               </ul>
             </Description>
           </Main>
@@ -196,13 +196,13 @@ const MySkillsPage = () => {
             <Description>
               <strong>Skills</strong> <br />
               <p>
-                Html, Css, Js, React, Redux, Node.js, Bootstrap, Tailwind,
-                Next.js, Dart, Flutter etc.
+                Html, Css, Js, React, Node.js, Bootstrap, Tailwind,
+                Next.js,etc.
               </p>
             </Description>
             <Description>
               <strong>Tools</strong> <br />
-              <p>VScode, Github, Codepen, DartPad etc.</p>
+              <p>VScode, Github, LeetCode etc.</p>
             </Description>
           </Main>
           <BigTitle text="Skills" top="80%" right="30%" />
