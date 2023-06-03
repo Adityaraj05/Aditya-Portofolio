@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 // import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
-import {  Github, Twitter, LinkendIn,Instagram } from "../components/AllSvgs";
+import {  Github, Twitter, LinkedIn,Instagram } from "../components/AllSvgs";
 import { DarkTheme } from "../components/Themes";
 
 const Icons = styled.div`
@@ -92,7 +92,7 @@ const SocialIcons = (props) => {
           target="_blank" rel='noopener noreferrer'
           href={"https://www.linkedin.com/feed/"}
         >
-          <LinkendIn
+          <LinkedIn
             width={25}
             height={25}
             fill={props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
