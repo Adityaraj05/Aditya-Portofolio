@@ -38,16 +38,17 @@ export const Work = [
         demo:"https://utility-azure.vercel.app/",
         github:"https://github.com/Adityaraj05/Utility"
        
-    },{
-        id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
+     },
+    //  {
+    //     id:5,
+    //     name:"Todo App(React + Redux)",
+    //     description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
+    //     tags:["react","redux","framer-motion"],
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
+    //     demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
+    //     github:"https://github.com/codebucks27/React-Redux-Todo-App"
         
-    },
+    // },
     {
         id:6,
         name:"Curd-App",
