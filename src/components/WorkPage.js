@@ -20,6 +20,7 @@ const Box = styled(motion.div)`
   background-color: ${(props) => props.theme.body};
   position: relative;
   display: flex;
+  // if we have to add some card then we should have to increase the dept as well
   height: 400vh;
 `;
 
