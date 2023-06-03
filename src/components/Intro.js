@@ -103,11 +103,11 @@ const SubBox = styled.div`
     left: 50%;
     transform: translate(-50%, 0%);
     width: 123%;
-    height: 155%;
+    height: 150%;
   }
   ${mediaQueries(50)`
       width: 100%;
-    height: 50%;
+    height: 40%;
       .pic {
     
     width: 70%;
@@ -207,10 +207,10 @@ const Intro = () => {
         <Text>
           <h1>Hi,</h1>
 
-          <h3>I'm Aditya Singh.</h3>
+          <h3>I'm Aditya Raj.</h3>
 
           <h6>
-          Everything which is happening in our life is happening for our good.
+           Everything which is happening in our life is happening for our good.
           </h6>
         </Text>
       </SubBox>
