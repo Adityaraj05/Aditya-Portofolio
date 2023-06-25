@@ -44,10 +44,10 @@ const Main = styled(motion.div)`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
-  width: 50vw;
-  height: 65vh;
+  width: 55vw;
+  height: 67vh;
   z-index: 3;
-  line-height: 1.5;
+  line-height: 1.2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@ const Main = styled(motion.div)`
 
   ${mediaQueries(40)`
           width: 60vw;
-          height: 50vh;
+          height: 60vh;
           top:50%;
           left:50%;
           transform:translate(-50%,-50%);
@@ -112,20 +112,15 @@ const AboutPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
           >
-            I'm a Full Stack Web/Blockchain Developer and Flutter Developer
+            I'm a Full Stack Web/Blockchain Developer
             located in India. I love to create Simple yet Modern Websites with
             Great User Experience and Responsiveness.
             <br />
             <br />
-            I'm interested in the whole Open Source Stack like trying new things
-            and building great projects. I'm an Independent Open Source
-            Contributor and Blogger. I love to contribute in public domains as
-            well as I Love to Develop Advanced Apps and also I Love Reading
-            Books. <br />
-            <br />I believe everything is an Art when you put your Consciousness
-            in it. You can connect with me via Social Links.{" "}
+            As a quick learner, I adapt easily to new technologies and concepts, allowing me to stay up-to-date with the latest advancements in the field. I take pride in my ability to be flexible and reliable, consistently meeting deadlines and delivering high-quality work. Time management is a strength of mine, enabling me to efficiently prioritize tasks and achieve optimal results. <br />
+            <br />Driven by enthusiasm and self-motivation, I approach every endeavor with a sense of responsibility and a strong work ethic. I am a mature team player, capable of adapting to any challenging situation that comes my way. I excel in collaborative environments, but I am equally comfortable working independently and taking initiative.
           </Main>
-          <BigTitle text="ABOUT" top="10%" left="5%" />
+          <BigTitle text="ABOUT" top="10%" left="35%" />
         </Box>
       </Suspense>
     </ThemeProvider>
