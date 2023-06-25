@@ -72,15 +72,18 @@ const Main = styled(motion.div)`
   `};
   ${mediaQueries(30)`
           width: 50vw;
-          height: auto;
+          height: 76vh;
           backdrop-filter: none;
           margin-top:2rem;
+        
 
   `};
 
   ${mediaQueries(20)`
           padding: 1rem;
-          font-size: calc(0.5rem + 1vw);
+          width: 40vw;
+          height: auto;
+          font-size: calc(0.1rem + 1vw);
   `};
 `;
 const AboutPage = () => {
@@ -120,7 +123,7 @@ const AboutPage = () => {
             As a quick learner, I adapt easily to new technologies and concepts, allowing me to stay up-to-date with the latest advancements in the field. I take pride in my ability to be flexible and reliable, consistently meeting deadlines and delivering high-quality work. Time management is a strength of mine, enabling me to efficiently prioritize tasks and achieve optimal results. <br />
             <br />Driven by enthusiasm and self-motivation, I approach every endeavor with a sense of responsibility and a strong work ethic. I am a mature team player, capable of adapting to any challenging situation that comes my way. I excel in collaborative environments, but I am equally comfortable working independently and taking initiative.
           </Main>
-          <BigTitle text="ABOUT" top="10%" left="35%" />
+          <BigTitle text="ABOUT" top="10%" left="15%" />
         </Box>
       </Suspense>
     </ThemeProvider>
