@@ -23,8 +23,9 @@ const Logo = styled.h1`
 
 const LogoComponent = (props) => {
   return (
+    // Aditya Raj Resume
     <Logo
-      onClick={() => window.open("https://drive.google.com/file/d/1C4E8PmIaLuxaowDlylZsU8fLZwYtpXAG/view?usp=drivesdk ")}
+      onClick={() => window.open("https://drive.google.com/file/d/1KMcUsrkzRGsX93ayPx-TNhifr1Y-19Ew/view?usp=drivesdk ")}
       color={props.theme}
     >
       AR
