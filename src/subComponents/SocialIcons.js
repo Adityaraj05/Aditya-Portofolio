@@ -39,7 +39,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank" rel='noopener noreferrer'
-          href={"https://github.com/"} 
+          href={"https://github.com/Adityaraj05"} 
         >
           <Github
             width={25}
