@@ -16,8 +16,8 @@ export const Work = [
         description:"It is build on top of the Next.js, with StyleComponents and for backend i have used firebase storage",
         tags:["Next.js","Tailwind-css","Firebase","MateriaiIcons","HeroIcons",],
         
-        demo:"https://twitter-clone-lilac-pi.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
+        demo:"https://aditya-portofolio.vercel.app/",
+        github:"https://github.com/Adityaraj05/Aditya-Portofolio"
         
     },
     {
