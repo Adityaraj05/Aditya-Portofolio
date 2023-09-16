@@ -3,7 +3,7 @@
 export const Work = [
     {
         id:1,
-        name:"Google-Clone",
+        name:"Google-Search Engine",
         description:"It is build on top of the Next.js, with styledComponents and Google api for severside rendering",
         tags:["Next.js","API","MaterialIcons","heroIcons"],
         
@@ -31,6 +31,15 @@ export const Work = [
     },
     {
         id:4,
+        name:"Health-Care",
+        description:"A Health-Care build using ReactJS. With realtime fetching data from API to provide first aid solutions.",
+        tags:["react","api","sass"],
+        
+        demo:"https://healthcaresaftery.netlify.app/",
+        github:"https://github.com/Adityaraj05/Health-Care"
+    },
+    {
+        id:5,
         name:"Text-Utils",
         description:"It is web tool to assist developers and other people in daily tasks by providing tools for manipulating the text-data.",
         tags:["react","tailwind-css","javascript"],
