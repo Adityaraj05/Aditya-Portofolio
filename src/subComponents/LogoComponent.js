@@ -25,7 +25,7 @@ const LogoComponent = (props) => {
   return (
     // Aditya Raj Resume
     <Logo
-      onClick={() => window.open("https://drive.google.com/file/d/15MZf1kmFo2VzZh_iefvqwWkPa3G7LEqk/view?usp=drive_link")}
+      onClick={() => window.open("https://drive.google.com/file/d/1m0WZnjfJ8fJEMZUMiy7EJPn4jy3QFngh/view?usp=sharing")}
       color={props.theme}
     >
       AR

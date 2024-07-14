@@ -115,8 +115,7 @@ const AboutPage = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
           >
-            I'm a Full Stack Web/Blockchain Developer
-            located in India. I love to create Simple yet Modern Websites with
+            I'm a Frontend Developer located in India. I love to create Simple yet Modern Websites with
             Great User Experience and Responsiveness.
             <br />
             <br />

@@ -210,7 +210,8 @@ const Intro = () => {
           <h3>I'm Aditya Raj.</h3>
 
           <h6>
-           Everything which is happening in our life is happening for our good.
+          Not Your Average Software Engineer
+          Get ready to turn your ideas into reality.
           </h6>
         </Text>
       </SubBox>
