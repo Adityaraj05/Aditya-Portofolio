@@ -1,15 +1,11 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import Me from "../assets/Images/profile-img.png";
+import Me from "../assets/Images/adi.jpg";
 import { mediaQueries } from "./Themes";
 
 const Box = styled(motion.div)`
-  /* width: 50vw;
-height:50vh;
- */
   width: 55vw;
   display: flex;
   background: linear-gradient(
@@ -49,27 +45,20 @@ height:50vh;
   ${mediaQueries(50)`
     width: 50vw;
     background-size: 100% 2px;
-
     flex-direction:column;
     justify-content:space-between;
-  
   `};
 
   ${mediaQueries(40)`
     width: 60vw;
-    
-  
   `};
 
   ${mediaQueries(30)`
     width: 70vw;
-    
-  
   `};
+  
   ${mediaQueries(20)`
     width: 60vw;
-    
-  
   `};
 
   @media only screen and (max-width: 50em) {
@@ -89,63 +78,61 @@ height:50vh;
     background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
   }
-
-  //height:55vh;
 `;
 
 const SubBox = styled.div`
   width: 50%;
   position: relative;
   display: flex;
+  overflow: hidden;
+  
   .pic {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 123%;
-    height: 130%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    max-width: 400px;
+    max-height: 100%;
   }
+  
   ${mediaQueries(50)`
-      width: 100%;
+    width: 100%;
     height: 40%;
-      .pic {
-    
-    width: 70%;
-    
-  }
-
+    .pic {
+      width: 70%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+    }
   `};
 
   ${mediaQueries(40)`
-  
-      .pic {
-    
-    width: 80%;
-    
-  }
-
+    .pic {
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
   `};
 
   ${mediaQueries(30)`
-     
-
-      .pic {
-    
-    width: 90%;
-    
-  }
-
+    .pic {
+      width: 90%;
+      height: auto;
+      object-fit: contain;
+    }
   `};
+  
   ${mediaQueries(20)`
-     
-
-     .pic {
-   
-   width: 80%;
-   
- }
-
- `};
+    .pic {
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+    }
+  `};
 `;
 
 const Text = styled(motion.div)`
@@ -160,33 +147,24 @@ const Text = styled(motion.div)`
 
   & > *:last-child {
     color: ${(props) => `rgba(${props.theme.bodyRgba},0.6)`};
-
     font-size: calc(0.5rem + 1.5vw);
     font-weight: 300;
 
     ${mediaQueries(40)`
-        font-size: calc(0.5rem + 1vw);
-
-
-  `};
+      font-size: calc(0.5rem + 1vw);
+    `};
   }
 
   ${mediaQueries(40)`
-        font-size: calc(1rem + 1.5vw);
-
-
+    font-size: calc(1rem + 1.5vw);
   `};
+  
   ${mediaQueries(20)`
-         padding: 1rem;
-
-
-
+    padding: 1rem;
   `};
 `;
 
 const Intro = () => {
-  /* console.log(mq); */
-
   const [height, setHeight] = useState("55vh");
 
   useEffect(() => {
@@ -197,6 +175,7 @@ const Intro = () => {
       setHeight("60vh");
     }
   }, []);
+
   return (
     <Box
       initial={{ height: 0 }}
@@ -206,12 +185,10 @@ const Intro = () => {
       <SubBox>
         <Text>
           <h1>Hi,</h1>
-
           <h3>I'm Aditya Raj.</h3>
-
           <h6>
-          Not Your Average Software Engineer
-          Get ready to turn your ideas into reality.
+            Not Your Average Software Engineer
+            Get ready to turn your ideas into reality.
           </h6>
         </Text>
       </SubBox>
@@ -220,6 +197,7 @@ const Intro = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 2 }}
+          style={{ width: '100%', height: '100%', position: 'relative' }}
         >
           <img className="pic" src={Me} alt="My Pic" />
         </motion.div>
@@ -229,5 +207,3 @@ const Intro = () => {
 };
 
 export default Intro;
-
-

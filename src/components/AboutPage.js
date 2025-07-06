@@ -35,25 +35,42 @@ const SpaceMan = styled(motion.div)`
   right: 5%;
   animation: ${float} 4s ease infinite;
   width: 20vw;
+  z-index: 2;
   img {
     width: 110%;
     height: auto;
   }
+  
+  ${mediaQueries(40)`
+    width: 25vw;
+    top: 5%;
+    right: 2%;
+  `};
+  
+  ${mediaQueries(30)`
+    width: 30vw;
+    top: 2%;
+    right: 1%;
+  `};
 `;
+
 const Main = styled(motion.div)`
   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 55vw;
-  height: 67vh;
+  max-height: 67vh;
+  min-height: 40vh;
   z-index: 3;
-  line-height: 1.2;
+  line-height: 1.5;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: calc(0.6rem + 1vw);
   backdrop-filter: blur(4px);
-
+  overflow-y: auto;
+  overflow-x: hidden;
+  
   position: absolute;
   left: calc(5rem + 5vw);
   top: 10rem;
@@ -61,31 +78,65 @@ const Main = styled(motion.div)`
   font-family: "Ubuntu Mono", monospace;
   font-style: italic;
 
+  /* Custom scrollbar styling */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme.text};
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: ${(props) => props.theme.text};
+    opacity: 1;
+  }
+
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: ${(props) => props.theme.text} rgba(255, 255, 255, 0.1);
+
   ${mediaQueries(40)`
-          width: 60vw;
-          height: 60vh;
-          top:50%;
-          left:50%;
-          transform:translate(-50%,-50%);
-
-
+    width: 60vw;
+    max-height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
   `};
+  
   ${mediaQueries(30)`
-          width: 50vw;
-          height: 76vh;
-          backdrop-filter: none;
-          margin-top:2rem;
-        
-
+    width: 70vw;
+    max-height: 70vh;
+    backdrop-filter: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    font-size: calc(0.5rem + 1vw);
   `};
 
   ${mediaQueries(20)`
-          padding: 1rem;
-          width: 40vw;
-          height: auto;
-          font-size: calc(0.1rem + 1vw);
+    padding: 1rem;
+    width: 85vw;
+    max-height: 75vh;
+    height: auto;
+    font-size: calc(0.4rem + 1vw);
+    line-height: 1.4;
   `};
 `;
+
+const ContentWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  padding-right: 10px; /* Space for scrollbar */
+`;
+
 const AboutPage = () => {
   return (
     <ThemeProvider theme={DarkTheme}>
@@ -111,17 +162,45 @@ const AboutPage = () => {
           >
             <img src={astronaut} alt="spaceman" />
           </SpaceMan>
+          
           <Main
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1, delay: 1 } }}
           >
-            I'm a Frontend Developer located in India. I love to create Simple yet Modern Websites with
-            Great User Experience and Responsiveness.
-            <br />
-            <br />
-            As a quick learner, I adapt easily to new technologies and concepts, allowing me to stay up-to-date with the latest advancements in the field. I take pride in my ability to be flexible and reliable, consistently meeting deadlines and delivering high-quality work. Time management is a strength of mine, enabling me to efficiently prioritize tasks and achieve optimal results. <br />
-            <br />Driven by enthusiasm and self-motivation, I approach every endeavor with a sense of responsibility and a strong work ethic. I am a mature team player, capable of adapting to any challenging situation that comes my way. I excel in collaborative environments, but I am equally comfortable working independently and taking initiative.
+            <ContentWrapper>
+              I'm an AI/ML Developer and Full Stack Engineer based in India with a
+              specialization in Computer Science and Engineering (AI). I enjoy building
+              intelligent systems and seamless software experiences.
+              <br />
+              <br />
+              I've worked with technologies like Python, Flask, .NET, React.js, and
+              TensorFlow, contributing to projects ranging from LLM-based sales chatbots
+              to accounting integrations with QuickBooks and Xero. My passion lies in
+              research-driven development, especially in fields like NLP, LLMs, and
+              Computer Vision.
+              <br />
+              <br />
+              During my internships at PinnacleWorks, Brainybeam, and Satva Solutions, I
+              gained hands-on experience with machine learning, frontend development, and
+              real-time backend integrations. I've also contributed to publication work in
+              AI cybersecurity and earned certifications from Microsoft and Oracle in AI
+              fundamentals and Generative AI.
+              <br />
+              <br />
+              I'm a quick learner and a self-motivated team player who values
+              responsibility, innovation, and clear communication. I thrive in both
+              collaborative and independent roles and always strive to deliver
+              high-quality, impactful solutions.
+              <br />
+              <br />
+              Beyond technical skills, I'm passionate about exploring emerging technologies
+              and staying updated with the latest trends in AI and software development.
+              I believe in continuous learning and actively participate in tech communities
+              and open-source projects to expand my knowledge and contribute to the
+              developer ecosystem.
+            </ContentWrapper>
           </Main>
+
           <BigTitle text="ABOUT" top="10%" left="15%" />
         </Box>
       </Suspense>
